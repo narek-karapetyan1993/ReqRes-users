@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/ReqRes-users/static/css/main.eae6615e.css",
+    "main.js": "/ReqRes-users/static/js/main.a2692462.js",
+    "static/css/613.682d1130.chunk.css": "/ReqRes-users/static/css/613.682d1130.chunk.css",
+    "static/js/613.56deccdc.chunk.js": "/ReqRes-users/static/js/613.56deccdc.chunk.js",
+    "static/css/196.1a1b1eaf.chunk.css": "/ReqRes-users/static/css/196.1a1b1eaf.chunk.css",
+    "static/js/196.15469219.chunk.js": "/ReqRes-users/static/js/196.15469219.chunk.js",
+    "static/css/619.cbd77203.chunk.css": "/ReqRes-users/static/css/619.cbd77203.chunk.css",
+    "static/js/619.2919334b.chunk.js": "/ReqRes-users/static/js/619.2919334b.chunk.js",
+    "static/css/421.913d473d.chunk.css": "/ReqRes-users/static/css/421.913d473d.chunk.css",
+    "static/js/421.e3d17b58.chunk.js": "/ReqRes-users/static/js/421.e3d17b58.chunk.js",
+    "static/js/787.bcd391a4.chunk.js": "/ReqRes-users/static/js/787.bcd391a4.chunk.js",
+    "static/js/134.679cd582.chunk.js": "/ReqRes-users/static/js/134.679cd582.chunk.js",
+    "static/media/roboto-v30-latin_cyrillic-regular.woff": "/ReqRes-users/static/media/roboto-v30-latin_cyrillic-regular.f80311e1d67029198330.woff",
+    "static/media/roboto-v30-latin_cyrillic-regular.woff2": "/ReqRes-users/static/media/roboto-v30-latin_cyrillic-regular.4fffc5153fbed09f129b.woff2",
+    "index.html": "/ReqRes-users/index.html",
+    "main.eae6615e.css.map": "/ReqRes-users/static/css/main.eae6615e.css.map",
+    "main.a2692462.js.map": "/ReqRes-users/static/js/main.a2692462.js.map",
+    "613.682d1130.chunk.css.map": "/ReqRes-users/static/css/613.682d1130.chunk.css.map",
+    "613.56deccdc.chunk.js.map": "/ReqRes-users/static/js/613.56deccdc.chunk.js.map",
+    "196.1a1b1eaf.chunk.css.map": "/ReqRes-users/static/css/196.1a1b1eaf.chunk.css.map",
+    "196.15469219.chunk.js.map": "/ReqRes-users/static/js/196.15469219.chunk.js.map",
+    "619.cbd77203.chunk.css.map": "/ReqRes-users/static/css/619.cbd77203.chunk.css.map",
+    "619.2919334b.chunk.js.map": "/ReqRes-users/static/js/619.2919334b.chunk.js.map",
+    "421.913d473d.chunk.css.map": "/ReqRes-users/static/css/421.913d473d.chunk.css.map",
+    "421.e3d17b58.chunk.js.map": "/ReqRes-users/static/js/421.e3d17b58.chunk.js.map",
+    "787.bcd391a4.chunk.js.map": "/ReqRes-users/static/js/787.bcd391a4.chunk.js.map",
+    "134.679cd582.chunk.js.map": "/ReqRes-users/static/js/134.679cd582.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eae6615e.css",
+    "static/js/main.a2692462.js"
+  ]
+}
