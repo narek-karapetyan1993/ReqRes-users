@@ -3,8 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "description": "users list from ReqRes.in",
-
-  "main": "src/index.tsx",
   "homepage": "https://narek-karapetyan1993.github.io/ReqRes-users/",
   "scripts": {
     "start": "react-scripts start",
@@ -54,6 +52,7 @@
     ],
     "extends": [
       "react-app",
+      "plugin:prettier/recommended",
       "prettier"
     ],
     "rules": {

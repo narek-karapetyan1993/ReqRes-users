@@ -18,9 +18,7 @@ export const authSlice = createSlice({
       state.meData = action.payload;
     },
 
-    deleteAuth: (state) => {
-      state = initialState;
-    },
+    deleteAuth: () => initialState,
   },
   extraReducers: (builder) => {
     builder
@@ -41,7 +39,6 @@ export const authSlice = createSlice({
         state.status = "loading";
       })
       .addCase(userLogout.fulfilled, (state) => {
-        state.status = "succeeded";
         state = initialState;
       })
       .addCase(userLogout.rejected, (state) => {

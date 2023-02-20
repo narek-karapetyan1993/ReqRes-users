@@ -23,9 +23,7 @@ export const usersSlice = createSlice({
       localStorage.setItem("usersData", JSON.stringify(state.users));
     },
 
-    deleteUsers: (state) => {
-      state = initialState;
-    },
+    deleteUsers: () => initialState,
   },
   extraReducers: (builder) => {
     builder

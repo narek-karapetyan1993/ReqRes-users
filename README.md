@@ -1,10 +1,14 @@
 # ReqRes-user
 
 
-
 ## Запуск приложения
 -   установка зависимостей `npm install`
 -   запуск Приложения `npm run start` (перейти по URL)
+
+
+## Для регистрация
+- в поле email вписать `eve.holt@reqres.in`
+- в полях пароля вписать `pistol`
 
 
 ## Функционал приложения
@@ -17,7 +21,7 @@
 
 
 ## Используемые технологии
--   работа с `SCSS-модулями`
+-   работа с `SASS-модулями`
 -   использование `TypeScript`
 -   работа с `react-hooks` в функциональных компонентах
 -   работа с функциями высшего порядка, использование карирования, замыканий
@@ -29,6 +33,6 @@
 
 
 ## Deploy
-[def]:  ""
+[def]:https://narek-karapetyan1993.github.io/ReqRes-users/  "https://narek-karapetyan1993.github.io/ReqRes-users/"
 
 [ReqRes-users][def]
