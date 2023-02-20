@@ -1,0 +1,60 @@
+@import "Styles/_variables";
+@import "Styles/_mixins";
+
+
+.usersList {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 48px 0 56px;
+  gap: 20px;
+}
+
+.moreBlock {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.moreBtn {
+  border: 1px solid $black;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 136.19%;
+  padding: 8px 16px;
+  transition: background-color .3s linear, border-color .3s linear, color .3s linear;
+
+  & span {
+    margin-left: 11px;
+
+    & * {
+      transition: fill .3s linear;
+    }
+
+  }
+
+  &:active {
+    border-color: $violet;
+    background-color: $violet;
+    color: $white;
+
+    & span * {
+      fill: $white;
+    }
+  }
+
+
+}
+
+@media (min-width: 700px) {
+  .moreBtn:hover {
+    border-color: $violet;
+    background-color: $violet;
+    color: $white;
+
+    & span * {
+      fill: $white;
+    }
+  }
+}

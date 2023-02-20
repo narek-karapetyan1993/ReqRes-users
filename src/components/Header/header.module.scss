@@ -1,0 +1,156 @@
+@import "Styles/_variables";
+
+.header {
+  background-color: $violet;
+  min-height: 265px;
+}
+
+.wrapper {
+  position: relative;
+  color: $gray_light;
+  text-align: center;
+}
+
+.home {
+  padding: 64px 300px;
+}
+
+.user {
+  display: flex;
+  text-align: start;
+  padding: 39px 108px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logout,
+.back {
+  position: absolute;
+  top: 32px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.back {
+  left: 0;
+}
+
+.logout {
+  right: 0;
+}
+
+
+.backBtn,
+.logoutBtn {
+  border: 1px solid $white;
+  padding: 8px 16px;
+  border-radius: 8px;
+
+
+}
+
+.backBtn,
+.logoutLink {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+}
+
+.heading {
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 75px;
+  margin-bottom: 16px;
+}
+
+.avatar {
+  border-radius: 50%;
+  display: block;
+  margin-right: 20px;
+  width: 187px;
+  height: 187px;
+}
+
+.description {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.info .description {
+  font-size: 32px;
+  line-height: 37px;
+}
+
+@media (max-width: 1200px) {
+  .home {
+    padding: 64px 200px;
+  }
+}
+
+@media (max-width: 950px) {
+  .home {
+    padding: 64px 50px;
+  }
+
+  .heading {
+    font-size: 36px;
+    line-height: 42px;
+  }
+}
+
+@media (max-width: 700px) {
+  .home {
+    padding: 64px 20px;
+  }
+
+  .user {
+    flex-direction: column;
+    padding: 64px 0;
+  }
+
+  .logout,
+  .back {
+    top: 16px;
+  }
+
+  .back {
+    left: -19px;
+  }
+
+  .logout {
+    right: -19px;
+  }
+
+
+
+  .info {
+    font-size: 16px;
+    line-height: 19px;
+    order: 1;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  .avatar {
+    order: 2;
+    margin: 0 auto;
+  }
+
+  .backBtn,
+  .logoutBtn {
+    border-color: transparent;
+  }
+
+  .backBtn {
+    & span {
+      transform: rotate(90deg);
+    }
+  }
+}

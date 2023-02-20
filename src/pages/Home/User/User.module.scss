@@ -1,0 +1,90 @@
+@import "Styles/_variables";
+@import "Styles/_mixins";
+
+.item {
+  border-radius: 10px;
+  box-shadow: 0px 1px 4px 0px $gray;
+  display: flex;
+  flex-direction: column;
+  max-width: calc((100% - 60px) / 4);
+  padding: 36px 20px 20px;
+  position: relative;
+  transition: box-shadow .3s linear;
+  width: 100%;
+}
+
+.avatar {
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 16px auto;
+  max-width: 124px;
+  min-height: 124px;
+}
+
+.name {
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.like {
+  align-self: flex-end;
+  position: relative;
+  z-index: 1;
+}
+
+.likeBtn {
+  background-color: $gray_light;
+  border-radius: 4px;
+  line-height: 12px;
+  padding: 8px;
+  transition: background-color .3s linear;
+}
+
+.info {
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  overflow: hidden;
+
+  &::after {
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+@media (min-width: 700px) {
+  .item:hover {
+    box-shadow: 0px 1px 4px 0px $black;
+
+  }
+
+  .likeBtn:hover {
+    background-color: #cfc7c7;
+  }
+}
+
+@media (max-width: 1200px) {
+  .item {
+    max-width: calc((100% - 40px) / 3);
+  }
+}
+
+@media (max-width: 950px) {
+  .item {
+    max-width: calc((100% - 20px) / 2);
+  }
+}
+
+@media (max-width: 700px) {
+  .item {
+    max-width: 100%;
+  }
+}

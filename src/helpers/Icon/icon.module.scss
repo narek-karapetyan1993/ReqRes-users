@@ -1,0 +1,31 @@
+@import "../../Styles/variables";
+
+.violet * {
+  fill: $violet;
+  stroke: $violet;
+}
+
+.red * {
+  fill: $red;
+  stroke: $red;
+}
+
+.white * {
+  fill: $white;
+  stroke: $white;
+}
+
+.grey * {
+  fill: $gray;
+  stroke: $gray;
+}
+
+.gray_light * {
+  fill: $gray_light;
+  stroke: $gray_light;
+}
+
+.black * {
+  fill: $black;
+  stroke: $black;
+}

@@ -1,0 +1,64 @@
+@import "Styles/_variables";
+@import "Styles/_mixins";
+
+.wrapper {
+  padding: 49px 225px 49px 108px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.textBlock {
+  flex: 0 1 630px;
+  margin-right: 20px;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+
+.text:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.phone,
+.mail {
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+
+
+  & span {
+    margin-right: 8px;
+  }
+}
+
+.phone {
+  margin-bottom: 25px;
+}
+
+
+@media (max-width: 1200px) {
+  .wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .contacts {
+    margin-bottom: 32px;
+  }
+
+  .wrapper {
+    padding: 49px 50px 49px 108px;
+  }
+}
+
+@media (max-width: 700px) {
+  .wrapper {
+    padding: 32px 0;
+  }
+}

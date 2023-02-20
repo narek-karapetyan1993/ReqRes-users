@@ -1,57 +1,56 @@
-import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
-import './App.css';
+import Loading from "components/common/Loading";
+import Layout from "components/Layout/Layout";
+import * as React from "react";
+import { Navigate, Route, Routes } from "react-router-dom";
+
+const Register = React.lazy(() => import("pages/Register/Register"));
+const Home = React.lazy(() => import("pages/Home/Home"));
+const UserInfo = React.lazy(() => import("pages/UserInfo/UserInfo"));
+const NoMatch = React.lazy(() => import("components/NoMatch"));
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Counter />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <span>
-          <span>Learn </span>
-          <a
-            className="App-link"
-            href="https://reactjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux-toolkit.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux Toolkit
-          </a>
-          ,<span> and </span>
-          <a
-            className="App-link"
-            href="https://react-redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React Redux
-          </a>
-        </span>
-      </header>
-    </div>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route path="/" element={<Navigate to="/ReqRes-users" replace />} />
+        <Route
+          path="/ReqRes-users/"
+          element={<Navigate to="/ReqRes-users/register" replace />}
+        />
+        <Route
+          path="/ReqRes-users/register"
+          element={
+            <React.Suspense fallback={<Loading />}>
+              <Register />
+            </React.Suspense>
+          }
+        />
+        <Route
+          path="/ReqRes-users/users"
+          element={
+            <React.Suspense fallback={<Loading />}>
+              <Home />
+            </React.Suspense>
+          }
+        />
+        <Route
+          path="/ReqRes-users/users/:id"
+          element={
+            <React.Suspense fallback={<Loading />}>
+              <UserInfo />
+            </React.Suspense>
+          }
+        />
+        <Route
+          path="*"
+          element={
+            <React.Suspense fallback={<Loading />}>
+              <NoMatch />
+            </React.Suspense>
+          }
+        />
+      </Route>
+    </Routes>
   );
 }
 
