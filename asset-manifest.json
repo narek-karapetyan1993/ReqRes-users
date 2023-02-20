@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ReqRes-users/static/css/main.eae6615e.css",
-    "main.js": "/ReqRes-users/static/js/main.a2692462.js",
+    "main.js": "/ReqRes-users/static/js/main.f3617a98.js",
     "static/css/613.682d1130.chunk.css": "/ReqRes-users/static/css/613.682d1130.chunk.css",
     "static/js/613.56deccdc.chunk.js": "/ReqRes-users/static/js/613.56deccdc.chunk.js",
     "static/css/196.1a1b1eaf.chunk.css": "/ReqRes-users/static/css/196.1a1b1eaf.chunk.css",
@@ -16,7 +16,7 @@
     "static/media/roboto-v30-latin_cyrillic-regular.woff2": "/ReqRes-users/static/media/roboto-v30-latin_cyrillic-regular.4fffc5153fbed09f129b.woff2",
     "index.html": "/ReqRes-users/index.html",
     "main.eae6615e.css.map": "/ReqRes-users/static/css/main.eae6615e.css.map",
-    "main.a2692462.js.map": "/ReqRes-users/static/js/main.a2692462.js.map",
+    "main.f3617a98.js.map": "/ReqRes-users/static/js/main.f3617a98.js.map",
     "613.682d1130.chunk.css.map": "/ReqRes-users/static/css/613.682d1130.chunk.css.map",
     "613.56deccdc.chunk.js.map": "/ReqRes-users/static/js/613.56deccdc.chunk.js.map",
     "196.1a1b1eaf.chunk.css.map": "/ReqRes-users/static/css/196.1a1b1eaf.chunk.css.map",
@@ -30,6 +30,6 @@
   },
   "entrypoints": [
     "static/css/main.eae6615e.css",
-    "static/js/main.a2692462.js"
+    "static/js/main.f3617a98.js"
   ]
 }
