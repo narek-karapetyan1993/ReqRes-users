@@ -19,33 +19,33 @@ function App() {
         <Route
           path="/ReqRes-users/register"
           element={
-            <React.Suspense fallback={<Loading />}>
-              <Register />
-            </React.Suspense>
+            // <React.Suspense fallback={<Loading />}>
+            <Register />
+            // </React.Suspense>
           }
         />
         <Route
           path="/ReqRes-users/users"
           element={
-            <React.Suspense fallback={<Loading />}>
-              <Home />
-            </React.Suspense>
+            // <React.Suspense fallback={<Loading />}>
+            <Home />
+            // </React.Suspense>
           }
         />
         <Route
           path="/ReqRes-users/users/:id"
           element={
-            <React.Suspense fallback={<Loading />}>
-              <UserInfo />
-            </React.Suspense>
+            // <React.Suspense fallback={<Loading />}>
+            <UserInfo />
+            // </React.Suspense>
           }
         />
         <Route
           path="*"
           element={
-            <React.Suspense fallback={<Loading />}>
-              <NoMatch />
-            </React.Suspense>
+            // <React.Suspense fallback={<Loading />}>
+            <NoMatch />
+            // </React.Suspense>
           }
         />
       </Route>
