@@ -1,4 +1,8 @@
-# ReqRes-user
+# ReqRes-user from ReqRes.in(public API)
+
+[def]:https://narek-karapetyan1993.github.io/ReqRes-users/  "https://narek-karapetyan1993.github.io/ReqRes-users/"
+
+## Deploy [ReqRes-users][def]
 
 
 ## Запуск приложения
@@ -32,7 +36,6 @@
 
 
 
-## Deploy
-[def]:https://narek-karapetyan1993.github.io/ReqRes-users/  "https://narek-karapetyan1993.github.io/ReqRes-users/"
 
-[ReqRes-users][def]
+
+

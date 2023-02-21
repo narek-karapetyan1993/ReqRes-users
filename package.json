@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "description": "users list from ReqRes.in",
+  "homepage": "https://narek-karapetyan1993.github.io/ReqRes-users/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

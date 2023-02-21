@@ -12,13 +12,9 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
+        <Route path="" element={<Navigate to="register" replace />} />
         <Route
-          path="/"
-          element={<Navigate to="/ReqRes-users/register" replace />}
-        />
-
-        <Route
-          path="/ReqRes-users/register"
+          path="register"
           element={
             <React.Suspense fallback={<Loading />}>
               <Register />
@@ -26,7 +22,7 @@ function App() {
           }
         />
         <Route
-          path="/ReqRes-users/users"
+          path="users"
           element={
             <React.Suspense fallback={<Loading />}>
               <Home />
@@ -34,22 +30,23 @@ function App() {
           }
         />
         <Route
-          path="/ReqRes-users/users/:id"
+          path="users/:id"
           element={
             <React.Suspense fallback={<Loading />}>
               <UserInfo />
             </React.Suspense>
           }
         />
-        <Route
-          path="*"
-          element={
-            <React.Suspense fallback={<Loading />}>
-              <NoMatch />
-            </React.Suspense>
-          }
-        />
       </Route>
+
+      <Route
+        path="*"
+        element={
+          <React.Suspense fallback={<Loading />}>
+            <NoMatch />
+          </React.Suspense>
+        }
+      />
     </Routes>
   );
 }

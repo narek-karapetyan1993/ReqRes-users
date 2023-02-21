@@ -37,7 +37,7 @@ export function User({ user }: UserProps) {
         </button>
       </div>
 
-      <Link className={styles.info} to={`/ReqRes-users/users/${user.id}`} />
+      <Link className={styles.info} to={`/users/${user.id}`} />
     </li>
   );
 }

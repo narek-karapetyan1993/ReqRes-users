@@ -12,7 +12,7 @@ import reportWebVitals from "./reportWebVitals";
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <BrowserRouter>
+      <BrowserRouter basename="/ReqRes-users">
         <App />
       </BrowserRouter>
     </Provider>

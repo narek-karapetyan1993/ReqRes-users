@@ -7,13 +7,14 @@ import { EColor, EIcons } from "helpers/enumeration";
 import { Icon } from "helpers/Icon";
 import { useResize } from "hooks/useResize";
 import React, { useEffect } from "react";
-import { Link, redirect, useLocation, useParams } from "react-router-dom";
+import { Link, useLocation, useNavigate, useParams } from "react-router-dom";
 
 import styles from "./header.module.scss";
 
 export function Header() {
   const location = useLocation();
   const dispatch = useAppDispatch();
+  const navigate = useNavigate();
 
   const { width } = useResize();
 
@@ -26,7 +27,8 @@ export function Header() {
       users.users.data.length === 0 &&
       token.token !== "" &&
       localStorage.usersData === undefined &&
-      location.pathname !== "/ReqRes-users/users"
+      location.pathname !== "/users" &&
+      location.pathname !== "/"
     ) {
       dispatch(getUsers(0));
     }
@@ -35,7 +37,7 @@ export function Header() {
   function logout() {
     localStorage.clear();
     dispatch(userLogout());
-    redirect("/ReqRes-users/register");
+    navigate("/register");
   }
 
   const user = users.users.data.find((element) => element.id === Number(id));
@@ -44,7 +46,7 @@ export function Header() {
     <header className={styles.header}>
       <div className="container">
         <div className={styles.wrapper}>
-          {location.pathname === "/ReqRes-users/users" ? (
+          {location.pathname === "/users" ? (
             <div className={styles.home}>
               <div className={styles.logout}>
                 <button type="button" className={styles.logoutBtn}>
@@ -68,7 +70,7 @@ export function Header() {
             <div className={styles.user}>
               <div className={styles.back}>
                 <button type="button" className={styles.backBtn}>
-                  <Link to="/ReqRes-users/users" className={styles.backLink}>
+                  <Link to="/users" className={styles.backLink}>
                     {width >= 700 ? (
                       "Назад"
                     ) : (

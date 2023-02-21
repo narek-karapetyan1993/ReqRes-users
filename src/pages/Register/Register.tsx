@@ -29,7 +29,7 @@ export default function Register() {
 
   useEffect(() => {
     if (token.token !== "" && status === "succeeded") {
-      navigate("/ReqRes-users/users");
+      navigate("/users");
     }
   }, [navigate, token, status]);
 
