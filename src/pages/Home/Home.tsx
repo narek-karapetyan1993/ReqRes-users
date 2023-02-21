@@ -5,29 +5,27 @@ import { getUsers } from "features/users/usersThunk";
 import { EIcons } from "helpers/enumeration";
 import { Icon } from "helpers/Icon";
 import React, { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { redirect } from "react-router-dom";
 
 import styles from "./Home.module.scss";
 import { User } from "./User";
 
 export default function Home() {
   const dispatch = useAppDispatch();
-  const navigate = useNavigate();
 
   const { users } = useAppSelector(selectUsers);
-
   const { token } = useAppSelector(selectAuth);
 
   useEffect(() => {
     if (token.token === "") {
-      navigate("/ReqRes-users/register");
+      redirect("/ReqRes-users/register");
     } else if (
       localStorage.usersData === undefined &&
       users.data.length === 0
     ) {
       dispatch(getUsers(0));
     }
-  }, [dispatch, navigate, token.token, users]);
+  }, [dispatch, token.token, users]);
 
   return (
     <div className={styles.wrapper}>

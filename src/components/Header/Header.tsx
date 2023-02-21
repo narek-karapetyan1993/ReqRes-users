@@ -7,14 +7,13 @@ import { EColor, EIcons } from "helpers/enumeration";
 import { Icon } from "helpers/Icon";
 import { useResize } from "hooks/useResize";
 import React, { useEffect } from "react";
-import { Link, useLocation, useNavigate, useParams } from "react-router-dom";
+import { Link, redirect, useLocation, useParams } from "react-router-dom";
 
 import styles from "./header.module.scss";
 
 export function Header() {
   const location = useLocation();
   const dispatch = useAppDispatch();
-  const navigate = useNavigate();
 
   const { width } = useResize();
 
@@ -36,7 +35,7 @@ export function Header() {
   function logout() {
     localStorage.clear();
     dispatch(userLogout());
-    navigate("/ReqRes-users/register");
+    redirect("/ReqRes-users/register");
   }
 
   const user = users.users.data.find((element) => element.id === Number(id));
